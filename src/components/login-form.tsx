@@ -1,10 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import companylogo from "./../assets/marginalia-travel.png";
+import travelImg from "./../assets/Illustration.png";
 type LogProps = {};
 
 const SignIn: React.FC<LogProps> = () => {
   return (
     <div>
+      {/* Main Component */}
       <article
         className="container col-md-6"
         style={{
@@ -16,6 +19,7 @@ const SignIn: React.FC<LogProps> = () => {
           top: "5%",
         }}
       >
+        {/* Company details component */}
         <div
           className="row col-md-6"
           style={{
@@ -24,7 +28,34 @@ const SignIn: React.FC<LogProps> = () => {
             height: "100%",
             backgroundColor: "rgba(0, 0, 0, 0.8)",
           }}
-        ></div>
+        >
+          {/* Company Logo */}
+          <img
+            src={companylogo}
+            alt=""
+            style={{
+              position: "relative",
+              width: "29%",
+              height: "11%",
+              alignItems: "center",
+              left: "32%",
+              top: "4%",
+            }}
+          />
+
+          {/* Travel Img */}
+          <img
+            src={travelImg}
+            alt=""
+            style={{
+              width: "80%",
+              height: "50%",
+              position: "relative",
+              left:"5%",
+              top:"-7%"
+            }}
+          />
+        </div>
       </article>
     </div>
   );
