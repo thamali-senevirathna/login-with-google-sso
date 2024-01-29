@@ -1,12 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SignIn from './components/login-form';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <SignIn />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
+  {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -17,10 +27,4 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+        </a> */}
