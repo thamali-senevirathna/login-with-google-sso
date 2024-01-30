@@ -2,8 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import companylogo from "./../assets/marginalia-travel.png";
 import travelImg from "./../assets/Illustration.png";
-import { Button } from "@mui/material";
+import { Button, Checkbox, FormControlLabel } from "@mui/material";
 import { TextField } from "@mui/material";
+import makeStyles from "@mui/material";
 
 type LogProps = {};
 
@@ -65,13 +66,24 @@ const SignIn: React.FC<LogProps> = () => {
 
 <div style={{width:"75vh",height:"89vh",backgroundColor:"white",position:"absolute",left:"48.40%",top:"0"}}>
 <h2 style={{fontSize:"20px",margin:"15%"}}>Welcome  to the Travel Planner TravelBoard</h2>
+<div>
 <TextField
-          required
-          id="outlined-required"
-          label="Required"
-          defaultValue="Hello World"
+          id="outlined-helperText"
+          label="Email"
+          defaultValue="example@gmail.com"
+        style={{marginBottom:"4%",width:"66%"}}
         />
-<Button variant="contained">Contained</Button>
+        <br />
+        <TextField
+          disabled
+          id="outlined-disabled"
+          label="Password"
+          defaultValue="*************************"
+          style={{width:"66%"}}
+        />
+</div>
+        <FormControlLabel control={<Checkbox defaultChecked />} label="Remember me" style={{marginLeft:"-32%",fontSize:"14px"}} />
+{/* <Button variant="contained">Contained</Button> */}
 </div>
 
       </article>
