@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import companylogo from "./../assets/marginalia-travel.png";
 import travelImg from "./../assets/Illustration.png";
+import { Button } from "@mui/material";
+import { TextField } from "@mui/material";
 
 type LogProps = {};
 
@@ -60,6 +62,18 @@ const SignIn: React.FC<LogProps> = () => {
           </h2>
           <p style={{fontSize:"13px",color:"white",fontWeight:"11px",marginTop:"-9%"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p>
         </div>
+
+<div style={{width:"75vh",height:"89vh",backgroundColor:"white",position:"absolute",left:"48.40%",top:"0"}}>
+<h2 style={{fontSize:"20px",margin:"15%"}}>Welcome  to the Travel Planner TravelBoard</h2>
+<TextField
+          required
+          id="outlined-required"
+          label="Required"
+          defaultValue="Hello World"
+        />
+<Button variant="contained">Contained</Button>
+</div>
+
       </article>
     </div>
   );
