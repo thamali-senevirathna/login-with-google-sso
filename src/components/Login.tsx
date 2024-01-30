@@ -1,9 +1,13 @@
 import React from 'react';
+import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
 
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div>
+        <h1>Login</h1>
+<GoogleLogin onSuccess={}/>
+    </div>
   )
 }
 
