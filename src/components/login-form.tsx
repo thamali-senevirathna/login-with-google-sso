@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import companylogo from "./../assets/marginalia-travel.png";
 import travelImg from "./../assets/Illustration.png";
+
 type LogProps = {};
 
 const SignIn: React.FC<LogProps> = () => {
@@ -13,9 +14,9 @@ const SignIn: React.FC<LogProps> = () => {
         style={{
           backgroundColor: "white",
           position: "absolute",
-          width: "160vh",
+          width: "145vh",
           height: "89vh",
-          left: "12%",
+          left: "16%",
           top: "5%",
         }}
       >
@@ -24,7 +25,7 @@ const SignIn: React.FC<LogProps> = () => {
           className="row col-md-6"
           style={{
             position: "relative",
-            width: "52%",
+            width: "50%",
             height: "100%",
             backgroundColor: "rgba(0, 0, 0, 0.8)",
           }}
@@ -38,7 +39,7 @@ const SignIn: React.FC<LogProps> = () => {
               width: "29%",
               height: "11%",
               alignItems: "center",
-              left: "32%",
+              left: "34%",
               top: "4%",
             }}
           />
@@ -48,13 +49,16 @@ const SignIn: React.FC<LogProps> = () => {
             src={travelImg}
             alt=""
             style={{
-              width: "80%",
-              height: "50%",
+              width: "75%",
+              height: "40%",
               position: "relative",
-              left:"5%",
-              top:"-7%"
+              left: "7%",
             }}
           />
+          <h2 style={{ fontSize: "30px", color: "white" }}>
+            The Whole World in one place
+          </h2>
+          <p style={{fontSize:"13px",color:"white",fontWeight:"11px",marginTop:"-9%"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun.</p>
         </div>
       </article>
     </div>
