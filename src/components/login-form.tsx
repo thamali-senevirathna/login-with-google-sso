@@ -1,11 +1,12 @@
 import React from "react";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import companylogo from "./../assets/marginalia-travel.png";
 import travelImg from "./../assets/Illustration.png";
-import { Button, Checkbox, FormControlLabel } from "@mui/material";
+import { Button, Checkbox, FormControlLabel, Link, Typography } from "@mui/material";
 import { TextField } from "@mui/material";
-import makeStyles from "@mui/material";
 
+import { GoogleLoginProps } from "react-google-login";
 type LogProps = {};
 
 const SignIn: React.FC<LogProps> = () => {
@@ -65,8 +66,8 @@ const SignIn: React.FC<LogProps> = () => {
         </div>
 
 <div style={{width:"75vh",height:"89vh",backgroundColor:"white",position:"absolute",left:"48.40%",top:"0"}}>
-<h2 style={{fontSize:"20px",margin:"15%"}}>Welcome  to the Travel Planner TravelBoard</h2>
-<div>
+<h2 style={{fontSize:"20px",margin:"10%"}}>Welcome  to the Travel Planner TravelBoard</h2>
+<div style={{bottom:"3%",position:"relative"}}>
 <TextField
           id="outlined-helperText"
           label="Email"
@@ -82,8 +83,27 @@ const SignIn: React.FC<LogProps> = () => {
           style={{width:"66%"}}
         />
 </div>
-        <FormControlLabel control={<Checkbox defaultChecked />} label="Remember me" style={{marginLeft:"-32%",fontSize:"14px"}} />
-{/* <Button variant="contained">Contained</Button> */}
+<div style={{position:"relative",left:"-2%",}}>
+<FormControlLabel control={<Checkbox defaultChecked size="small" />} label="Remember me" style={{ fontSize:"14px"}} />
+        <Link href="#" color="inherit" style={{fontSize:"15px",position:"relative",right:"-5%"}}>
+  {'Forgot Password?'}
+</Link>
+</div>
+        
+<Button variant="contained" style={{backgroundColor:"black",width:"65%",height:"8%",marginTop:"4%"}}>LOGIN</Button>
+<div style={{position:"relative",top:"1%"}}>
+<hr style={{width:"29%",position:"absolute",left:"18%"}}/>
+<p style={{fontSize:"14px",position:"absolute",left:"48%",}}>Or</p>
+<hr style={{width:"29%",position:"absolute",left:"53%",top:"-12%"}}/>
+</div>
+
+<p style={{fontSize:"14px",position:"absolute",bottom:"17%",left:"29%",}}>Don't have an account ? <Link href="#" style={{fontSize:"12px",fontWeight:"bold"}}>SIGN UP</Link>
+</p>
+<div>
+<Button size="medium" style={{backgroundColor:"rgba(0,0,0,0.1)",width:"65%",marginTop:"16%",border:"2px solid rgba(0,0,0,0.1)",fontSize:"14px"}}>Sign with google</Button>
+
+</div>
+
 </div>
 
       </article>
