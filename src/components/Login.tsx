@@ -1,12 +1,17 @@
 import React from 'react';
-import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
+import { CredentialResponse, GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
 
 
 const Login = () => {
+    const handleResponse = (res: CredentialResponse) => {
+       console.log(res);
+       
+    }
+
   return (
     <div>
         <h1>Login</h1>
-<GoogleLogin onSuccess={}/>
+<GoogleLogin onSuccess={handleResponse}/>
     </div>
   )
 }
